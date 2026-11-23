@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clasificador de Funciones - Lineal y Afín</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Encabezado con el título y mis datos -->
+    <header>
+        <h1>Clasificador de Funciones: Lineal y Afín</h1>
+        <p class="alinear">Laboratorio Web de Matemáticas</p>
+        <p class="alinear">Gianlucas Miranda 13/11/2026 3°B</p>
+    </header>
+    <!-- Parte principal de mi página -->
+    <main>
+        <!-- Cajas donde muestro los números aleatorios que me salgan para b y c -->
+        <section class="caja">
+            <p><strong>b = </strong> <span id="valor-b"> Random (-3 a 3)</span></p>
+        </section>
+        <section class="caja">
+            <p><strong>c = </strong> <span id="valor-c"> Random (-3 a 3)</span></p>
+        </section>
+        <!-- Botón que presiono para generar los valores y ver qué función me toca -->
+        <button id="btn-gen">Generar</button>
+        <!-- Sección con los 4 recuadros de funciones (se ilumina el que cumpla la condición) -->
+        <section class="clasificacion">
+            <!-- Recuadro para la Función Lineal -->
+            <article id="caja-lineal" class="recuadro inactivo">
+                <h2>LINEAL (c = 0)</h2>
+                <div id="texto-lineal">
+                    <p>Muestra la lista de propiedades de la Función Lineal si cumple la condición (c = 0).</p>
+                </div>
+            </article>
+            <!-- Recuadro para la Función Afín -->
+            <article id="caja-afin" class="recuadro inactivo">
+                <h2>AFÍN (c ≠ 0)</h2>
+                <div id="texto-afin">
+                    <p>Muestra la lista de propiedades de la Función Afín si cumple la condición (c ≠ 0).</p>
+                </div>
+            </article>
+            <!-- Recuadro para la Función Constante -->
+            <article id="caja-constante" class="recuadro inactivo">
+                <h2>CONSTANTE (b = 0, c ≠ 0)</h2>
+                <div id="texto-constante">
+                    <p>Muestra la lista de propiedades de la Función Constante si cumple la condición (b = 0 y c ≠ 0).</p>
+                </div>
+            </article>
+            <!-- Recuadro para cuando no hay función -->
+            <article id="caja-nula" class="recuadro inactivo">
+                <h2>NO HAY FUNCIÓN (b = 0, c = 0)</h2>
+                <div id="texto-nula">
+                    <p>Muestra el mensaje cuando ambos valores son cero (b = 0 y c = 0).</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- Pie de página con el enlace a geogebra y lo que debo hacer para entregar -->
+    <footer>
+        <p><strong>ENLACE:</strong> <a href="https://geogebra.org" target="_blank">GeoGebra Clásico (geogebra.org/classic)</a></p>
+        <p><strong>ACCIÓN:</strong> Subir / Guardar archivo .ggb a GitHub.</p>
+    </footer>
+    <!-- Aquí conecto mi archivo de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
